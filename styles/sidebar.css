@@ -99,9 +99,9 @@
 }
 
 .contact-type {
-  color: var(--white);
+  color: var(--orange);
   margin-right: 8px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .contact-link {
