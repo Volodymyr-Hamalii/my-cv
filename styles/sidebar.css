@@ -13,38 +13,36 @@
   margin-bottom: 50px;
 }
 
-.sidebar_section {
+.sidebar__section {
   margin-left: 40px;
   margin-bottom: 45px;
 }
 
-/* Contacts */
-
-.contact_type {
-  color: var(--white);
-  margin-right: 8px;
-  font-weight: 600;
-}
-
-.contact_link {
-  color: var(--white);
-  opacity: 0.5;
-}
-
-/* Skills */
-
-.sidebar_title {
+.sidebar__section-title {
   color: var(--white);
   font-size: 22px;
   line-height: 27px;
   margin-bottom: 10px;
 }
 
-.sidebar_list {
+.sidebar__section-list {
   padding: 0;
   padding-left: 18px;
 }
 
-.sidebar_items {
+.sidebar__section-item {
   color: var(--orange);
+}
+
+/* Contacts */
+
+.contact-type {
+  color: var(--white);
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.contact-link {
+  color: var(--white);
+  opacity: 0.5;
 }
