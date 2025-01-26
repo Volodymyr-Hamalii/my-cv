@@ -119,8 +119,8 @@ li {
 }
 
 .align-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* .flex div {
@@ -165,6 +165,10 @@ li {
 /* .grid {
     display: grid;
 } */
+
+.transparent {
+    opacity: 0;
+}
 
 /* Colours */
 
@@ -212,4 +216,15 @@ li {
 
 .mt-15 {
   margin-top: 15px;
+}
+
+/* Page break */
+
+
+.sidebar__page-break {
+  margin-top: 420px;
+}
+
+.main__page-break {
+  margin-top: 550px;
 }
