@@ -141,35 +141,35 @@ li {
 /* Colours */
 
 .white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .light-grey {
-  color: var(--light-grey);
+  color: var(--light-grey) !important;
 }
 
 .grey {
-  color: var(--grey);
+  color: var(--grey) !important;
 }
 
 .dark-grey {
-  color: var(--dark-grey);
+  color: var(--dark-grey) !important;
 }
 
 .black {
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 .orange {
-  color: var(--orange);
+  color: var(--orange) !important;
 }
 
 .blue {
-  color: var(--purple);
+  color: var(--purple) !important;
 }
 
 .dark-blue {
-  color: var(--dark-blue);
+  color: var(--dark-blue) !important;
 }
 
 /* Types */
