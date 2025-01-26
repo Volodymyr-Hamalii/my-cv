@@ -61,6 +61,10 @@
   border-radius: 0.25rem;
 }
 
+.skills-block p {
+    margin-top: 10px;
+}
+
 /* Work styles */
 
 .work-position {
