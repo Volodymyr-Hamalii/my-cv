@@ -44,6 +44,10 @@
 
 /* Contacts */
 
+.contact-line {
+  margin-bottom: 0.25rem;
+}
+
 .contact-type {
   color: var(--white);
   margin-right: 8px;
@@ -52,4 +56,27 @@
 
 .contact-link {
   color: var(--grey);
+}
+
+.contact-social {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-social__row {
+  display: flex;
+  width: 100%;
+}
+
+.contact-social__row-text {
+  display: flex;
+  width: 7rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+.contact-social__row-icon {
+  display: flex;
 }
