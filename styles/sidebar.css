@@ -70,7 +70,7 @@
   font-size: 12px;
   text-align: end;
   font-style: italic;
-  /* color: var(--grey); */
+  color: var(--grey);
 }
 
 .license-link-row {
