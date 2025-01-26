@@ -25,12 +25,12 @@
   margin-bottom: 10px;
 }
 
-.sidebar__section-list {
+.sidebar__list {
   padding: 0;
   padding-left: 18px;
 }
 
-.sidebar__section-item {
+.sidebar__list li {
   color: var(--orange);
 }
 
