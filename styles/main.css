@@ -38,18 +38,18 @@
   /* margin: 0 0 15px 0; */
 }
 
-/* About styles */
+/* Introduction styles */
 
-.about {
+.introduction {
   margin-bottom: 40px;
 }
 
-.about-position {
+.introduction-position {
   background-color: var(--white);
   margin-bottom: 20px;
 }
 
-.about-description {
+.introduction-description {
   /* width: 400px; */
   font-style: italic;
 }
@@ -76,4 +76,11 @@
 .period_line {
   font-size: 12px;
   line-height: 15px;
+}
+
+/* About */
+
+.about-text {
+  text-align: justify;
+  margin-bottom: 10px;
 }

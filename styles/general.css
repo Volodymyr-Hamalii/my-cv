@@ -105,6 +105,10 @@ li {
   font-weight: 600;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 /* Structures */
 
 .flex {
