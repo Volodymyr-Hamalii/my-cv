@@ -1,0 +1,50 @@
+.sidebar {
+  background-color: var(--dark-purple);
+  padding-top: 40px;
+  width: 370px;
+}
+
+.sidebar * {
+  color: var(--white);
+}
+
+.photo {
+  width: 370px;
+  margin-bottom: 50px;
+}
+
+.sidebar_section {
+  margin-left: 40px;
+  margin-bottom: 45px;
+}
+
+/* Contacts */
+
+.contact_type {
+  color: var(--white);
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.contact_link {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+/* Skills */
+
+.sidebar_title {
+  color: var(--white);
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.sidebar_list {
+  padding: 0;
+  padding-left: 18px;
+}
+
+.sidebar_items {
+  color: var(--orange);
+}

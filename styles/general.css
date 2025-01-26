@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Control how pages are formatted when printing */
+@page {
+  size: A4;
+  /* margin: 2cm; */
+}
+
+:root {
+  --white: #ffffff;
+  --light-grey: #f6f6f6;
+  --grey: #a8a8a8;
+  --dark-grey: #595959;
+  --black: #000000;
+
+  --light-purple: rgba(243, 243, 248, 0.541);
+  --purple: #2b2741;
+  --dark-purple: #1a1533;
+
+  --orange: #fb6d3a;
+  --background: #f5f7fa;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+}
+
+/* .page {
+    width: 210mm;
+    height: 297mm;
+} */
+
+main {
+  display: flex;
+  flex-direction: row-reverse; /*placing of columns*/
+  width: 1200px;
+  /* height: 1320px; */
+  margin: 0px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text */
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--black);
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--dark-blue);
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 10px 0;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 0 10px 0;
+}
+
+p,
+span,
+li {
+  /* color: var(--dark-grey); */
+  color: var(--black);
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* Structures */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex div {
+  flex-basis: 45%;
+}
+
+.grid-columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-column-block {
+  padding: 10px;
+}
+
+.masonry-container {
+  column-count: 2; /* 2 columns */
+  column-gap: 20px; /* space between columns */
+}
+
+.masonry-block {
+  margin-bottom: 20px; /* gap between blocks within a column */
+  padding: 10px;
+  break-inside: avoid; /* Prevent block from splitting across columns */
+}
+
+/* .grid {
+    display: grid;
+} */
+
+/* Colours */
+
+.white {
+  color: var(--white);
+}
+
+.light-grey {
+  color: var(--light-grey);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+.black {
+  color: var(--black);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.blue {
+  color: var(--purple);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+/* Types */
+
+.bold {
+  font-weight: 700;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
