@@ -154,6 +154,7 @@ li {
   overflow: hidden;
   /* background-color: var(--dark-purple); */
   /* box-shadow: 0 2px 8px var(--purple); */
+  border-radius: 5px;
 }
 
 .icon-wrapper img {
