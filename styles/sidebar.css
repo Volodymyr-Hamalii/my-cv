@@ -20,7 +20,6 @@
 
 .sidebar__section-title {
   color: var(--white);
-  font-size: 22px;
   line-height: 27px;
   margin-bottom: 10px;
 }
@@ -73,8 +72,12 @@
 .contact-social__row-text {
   display: flex;
   width: 7rem;
-  font-weight: 600;
   align-items: center;
+}
+
+.contact-social__row-text p {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .contact-social__row-icon {
