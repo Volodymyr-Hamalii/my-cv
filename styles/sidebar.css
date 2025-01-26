@@ -10,12 +10,11 @@
 
 .photo {
   width: 370px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .sidebar__section {
-  margin-left: 40px;
-  margin-bottom: 45px;
+  padding: 20px 40px 0 40px;
 }
 
 .sidebar__section-title {
@@ -39,6 +38,58 @@
 
 .sidebar__list li p span {
   color: var(--grey);
+}
+
+/* Licenses */
+
+.license {
+  margin: 25px 0;
+}
+
+.license-title {
+  margin-top: 20px;
+}
+
+.license-description {
+  font-weight: 600;
+  max-width: 170px;
+  line-height: 20px;
+}
+
+/* Bullet */
+/* .license-title::before {
+  content: "\2022";
+  color: var(--orange);
+  display: inline-block;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  vertical-align: middle;
+} */
+
+.license-period {
+  font-size: 12px;
+  text-align: end;
+  font-style: italic;
+  /* color: var(--grey); */
+}
+
+.license-link-row {
+  color: var(--orange);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.license-link-row a {
+  text-decoration: none;
+}
+
+.license-link-row div {
+  gap: 15px;
+}
+
+.license-organization {
+  color: var(--orange);
+  font-weight: 600;
 }
 
 /* Contacts */
