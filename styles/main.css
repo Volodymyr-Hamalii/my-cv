@@ -44,9 +44,26 @@
   margin-bottom: 40px;
 }
 
+.introduction-first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.introduction-first-line a {
+  /* text-decoration: none; */
+  font-size: 12px;
+  font-style: italic;
+  color: var(--orange);
+}
+
+.introduction-first-line a p {
+  color: var(--orange);
+}
+
 .introduction-position {
   background-color: var(--white);
-  margin-bottom: 20px;
 }
 
 .introduction-description {
@@ -62,7 +79,7 @@
 }
 
 .skills-block p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Work styles */
