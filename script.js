@@ -1,4 +1,6 @@
 (function () {
+  console.log("Script is loaded.");
+  
   // Ph
   var part1 = "+380";
   var part2 = "66";
