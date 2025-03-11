@@ -109,6 +109,10 @@ li {
   text-decoration: line-through;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 /* Structures */
 
 .flex {
