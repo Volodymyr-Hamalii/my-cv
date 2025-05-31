@@ -54,7 +54,7 @@
 .introduction-first-line a {
   /* text-decoration: none; */
   font-size: 12px;
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--orange);
 }
 
@@ -69,6 +69,32 @@
 .introduction-description {
   /* width: 400px; */
   font-style: italic;
+}
+
+.introduction-actions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+  gap: 0.25rem;
+}
+
+#introduction-export-pdf-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 0.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#introduction-export-pdf-btn:active {
+  background-color: var(--dark-orange);
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) inset;
+}
+#introduction-export-pdf-btn {
+  transition: background 0.07s, transform 0.05s;
 }
 
 /* Skills */
