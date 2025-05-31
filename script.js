@@ -1,6 +1,6 @@
 (function () {
   console.log("Script is loaded.");
-  
+
   // Ph
   var part1 = "+380";
   var part2 = "66";
@@ -21,3 +21,32 @@
   mailLink.href = mail;
   mailLink.textContent = mailDisplay;
 })();
+
+// PDF Export functionality
+function exportToPDF() {
+  const element = document.querySelector("main");
+  const rect = element.getBoundingClientRect();
+  // Convert px to inches (1in = 96px)
+  const pxToIn = (px) => px / 96;
+  const widthIn = pxToIn(rect.width);
+  const heightIn = pxToIn(rect.height) + 0.005;
+
+  const opt = {
+    margin: 0,
+    filename: "Volodymyr_Hamalii_CV.pdf",
+    image: { type: "jpeg", quality: 1 },
+    html2canvas: {
+      scale: 2,
+      useCORS: true,
+      letterRendering: true,
+    },
+    jsPDF: {
+      unit: "in",
+      format: [widthIn, heightIn],
+      orientation: "portrait",
+    },
+    pagebreak: { mode: ["avoid-all"] },
+  };
+
+  html2pdf().set(opt).from(element).save();
+}
