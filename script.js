@@ -34,7 +34,7 @@ function exportToPDF() {
   const opt = {
     margin: 0,
     filename: "Volodymyr_Hamalii_CV.pdf",
-    image: { type: "jpeg", quality: 1 },
+    image: { type: "jpeg", quality: 0.5 },
     html2canvas: {
       scale: 2,
       useCORS: true,
