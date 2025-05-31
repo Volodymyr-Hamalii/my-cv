@@ -42,7 +42,7 @@ function exportToPDF() {
     const pxToIn = (px) => px / 96;
     const widthIn = pxToIn(element.scrollWidth);
     // Subtract a small value to avoid extra page
-    const heightIn = pxToIn(element.scrollHeight) + 0.15;
+    const heightIn = pxToIn(element.scrollHeight) + 0.05;
 
     const opt = {
       margin: 0,
