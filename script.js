@@ -28,37 +28,49 @@ function exportToPDF() {
   const btn = document.getElementById("introduction-export-pdf-btn");
   btn.style.display = "none"; // Hide the button
 
-  const rect = element.getBoundingClientRect();
-  // Convert px to inches (1in = 96px)
-  const pxToIn = (px) => px / 96;
-  const widthIn = pxToIn(rect.width);
-  const heightIn = pxToIn(rect.height);
-
-  const opt = {
-    margin: 0,
-    filename: "Volodymyr_Hamalii_CV.pdf",
-    image: { type: "jpeg", quality: 0.5 },
-    html2canvas: {
-      scale: 2,
-      useCORS: true,
-      letterRendering: true,
-    },
-    jsPDF: {
-      unit: "in",
-      format: [widthIn, heightIn],
-      orientation: "portrait",
-    },
-    pagebreak: { mode: ["avoid-all"] },
-  };
-
-  html2pdf()
-    .set(opt)
-    .from(element)
-    .save()
-    .then(() => {
-      btn.style.display = ""; // Show the button again
-    })
-    .catch(() => {
-      btn.style.display = ""; // Show the button again even if there's an error
+  // Wait for images to load
+  const images = element.querySelectorAll("img");
+  const imagePromises = Array.from(images).map((img) => {
+    if (img.complete) return Promise.resolve();
+    return new Promise((resolve) => {
+      img.onload = img.onerror = resolve;
     });
+  });
+
+  Promise.all(imagePromises).then(() => {
+    // Use scrollHeight for more accurate measurement
+    const pxToIn = (px) => px / 96;
+    const widthIn = pxToIn(element.scrollWidth);
+    // Subtract a small value to avoid extra page
+    const heightIn = pxToIn(element.scrollHeight) + 0.15;
+
+    const opt = {
+      margin: 0,
+      filename: "Volodymyr_Hamalii_CV.pdf",
+      image: { type: "jpeg", quality: 0.95 },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        letterRendering: true,
+        windowHeight: element.scrollHeight,
+      },
+      jsPDF: {
+        unit: "in",
+        format: [widthIn, heightIn],
+        orientation: "portrait",
+      },
+      pagebreak: { mode: ["avoid-all"] },
+    };
+
+    html2pdf()
+      .set(opt)
+      .from(element)
+      .save()
+      .then(() => {
+        btn.style.display = ""; // Show the button again
+      })
+      .catch(() => {
+        btn.style.display = ""; // Show the button again even if there's an error
+      });
+  });
 }
