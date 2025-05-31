@@ -32,7 +32,7 @@ function exportToPDF() {
   // Convert px to inches (1in = 96px)
   const pxToIn = (px) => px / 96;
   const widthIn = pxToIn(rect.width);
-//   const heightIn = pxToIn(rect.height) + 0.01;
+  const heightIn = pxToIn(rect.height);
 
   const opt = {
     margin: 0,
