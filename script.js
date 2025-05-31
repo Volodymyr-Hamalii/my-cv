@@ -25,6 +25,9 @@
 // PDF Export functionality
 function exportToPDF() {
   const element = document.querySelector("main");
+  const btn = document.getElementById("introduction-export-pdf-btn");
+  btn.style.display = "none"; // Hide the button
+
   const rect = element.getBoundingClientRect();
   // Convert px to inches (1in = 96px)
   const pxToIn = (px) => px / 96;
@@ -48,5 +51,14 @@ function exportToPDF() {
     pagebreak: { mode: ["avoid-all"] },
   };
 
-  html2pdf().set(opt).from(element).save();
+  html2pdf()
+    .set(opt)
+    .from(element)
+    .save()
+    .then(() => {
+      btn.style.display = ""; // Show the button again
+    })
+    .catch(() => {
+      btn.style.display = ""; // Show the button again even if there's an error
+    });
 }
